@@ -14,12 +14,12 @@ Change to the `/tmp` directory.
 cd /tmp
 ```
 
-Clone the Git Repository
+Clone the Git repository.
 ```
 git clone https://github.com/wayne-hartmann/ttf-wps-fonts.git
 ```
 
-Create a sub directory in your system's fonts directory. This is usually `/usr/share/fonts`, otherwise consult your distributions documentation.
+Create a sub directory in your system's fonts directory. This is usually `/usr/share/fonts`, otherwise consult your distribution's documentation.
 ```
 sudo mkdir /usr/share/fonts/wps-fonts
 ```
@@ -29,7 +29,7 @@ Move fonts to the new directory.
 sudo mv ttf-wps-fonts/* /usr/share/fonts/wps-fonts
 ```
 
-Fix Permissions
+Fix the file permissions.
 ```
 sudo chmod 644 /usr/share/fonts/wps-fonts/*
 ```
