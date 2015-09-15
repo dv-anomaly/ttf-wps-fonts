@@ -38,6 +38,10 @@ Rebuild the font cache.
 sudo fc-cache -vfs
 ```
 
+Clean up the `tmp` directory.
+```
+rm -rf /tmp/ttf-wps-fonts
+```
 
 
 
