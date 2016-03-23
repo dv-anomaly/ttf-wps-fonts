@@ -16,7 +16,7 @@ cd /tmp
 
 Clone the Git repository.
 ```
-git clone https://github.com/wayne-hartmann/ttf-wps-fonts.git
+git clone https://github.com/iamdh4/ttf-wps-fonts.git
 ```
 
 Create a sub directory in your system's fonts directory. This is usually `/usr/share/fonts`, otherwise consult your distribution's documentation.
