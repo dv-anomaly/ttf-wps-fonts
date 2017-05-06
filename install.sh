@@ -5,8 +5,8 @@ else
   echo "Creating fonts folder..." &&
   mkdir /usr/share/fonts/wps-fonts &&
   echo "Moving files to the fonts folder..." &&
-  mv ./*.ttf /usr/share/fonts/wps-fonts &&
-  mv ./*.TTF /usr/share/fonts/wps-fonts &&
+  cp ./*.ttf /usr/share/fonts/wps-fonts &&
+  cp ./*.TTF /usr/share/fonts/wps-fonts &&
   echo "Fixing permissions..." &&
   chmod 644 /usr/share/fonts/wps-fonts/* &&
   echo "Rebuilding fonts cache..." &&
