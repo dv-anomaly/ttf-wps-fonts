@@ -23,7 +23,7 @@ git clone https://github.com/iamdh4/ttf-wps-fonts.git
 ```
 Run the install script.
 ```
-bash ttf-wps-fonts/install.sh
+sudo bash ttf-wps-fonts/install.sh
 ```
 Clean up the `tmp` directory.
 ```
