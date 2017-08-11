@@ -25,16 +25,19 @@ fi
 FONT_PATH=$FONT_PATH"/wps-fonts"
 
 if [ -d "$FONT_PATH" ]; then
+  # flush stdin
+  while read -r -t 0; do read -r; done 
+  
   read -p "Font Directory already exists, continue? [y/N] " -n 1 -r 
 fi
 
-if [[$REPLY == "" ]]; then
+if [[ $REPLY == "" ]]; then
   exit 0
 elif [[ $REPLY =~ ^[Nn]$ ]]; then
   exit 0
 fi
 
-echo "Fonts will be installed in: "$FONT_PATH
+echo -e "\nFonts will be installed in: "$FONT_PATH
 read -p "Continue with installation? [Y/n] " -n 1 -r
 
 if [[ $REPLY =~ ^[Nn]$ ]]; then
